@@ -9,4 +9,14 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Kostantinos()
+    {
+        SceneManager.LoadScene("Kostantinos", LoadSceneMode.Single);
+    }
+
+    public void Palmatree_Road()
+    {
+        SceneManager.LoadScene("PalmtreeRoad", LoadSceneMode.Single);
+    }
 }

@@ -11,6 +11,16 @@ public class KeyBindScript : MonoBehaviour
 
     private GameObject currentKey;
 
+    private void Awake()
+    {
+        PlayerPrefs.SetString("Up", "Z");
+        PlayerPrefs.SetString("Down", "S");
+        PlayerPrefs.SetString("Left", "Q");
+        PlayerPrefs.SetString("Right", "D");
+        PlayerPrefs.SetString("Frein", "Space");
+        PlayerPrefs.SetString("Reset", "R");
+        PlayerPrefs.Save();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +60,11 @@ public class KeyBindScript : MonoBehaviour
                 currentKey = null;
             }
         }
+    }
+
+    public bool GetKey(string key)
+    {
+        return keys.ContainsKey(key);
     }
 
     public void ChangeKey(GameObject clicked)

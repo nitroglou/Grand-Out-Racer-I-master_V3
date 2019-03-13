@@ -2,9 +2,9 @@ sceneSetups:
 - path: Assets/Menu/Menu.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Palmtree Road/Scenes/Palmtree Road.unity
+- path: Assets/Palmtree Road/Scenes/PalmtreeRoad.unity
   isLoaded: 0
   isActive: 0
-- path: Assets/Pierre/Scenes/SampleScene.unity
+- path: Assets/Pierre/Scenes/Kostantinos.unity
   isLoaded: 0
   isActive: 0
