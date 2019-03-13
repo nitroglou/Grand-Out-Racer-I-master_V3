@@ -4,7 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
-    [RequireComponent(typeof (CarController))]
+    [RequireComponent(typeof(CarController))]
     public class CarUserControl : MonoBehaviour
     {
         private CarController m_Car; // the car controller we want to use
@@ -33,12 +33,13 @@ namespace UnityStandardAssets.Vehicles.Car
             }
             if (Input.GetKey((KeyCode)Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Right"))))
             {
-                h = Time.deltaTime * movementSpeed * 20f;
+                h = Time.deltaTime * movementSpeed * 20f * GetComponent<CarController>().m_SteerAngle;
             }
             if (Input.GetKey((KeyCode)Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Left"))))
             {
-                h = -Time.deltaTime * movementSpeed * 20f;
+                h = -Time.deltaTime * movementSpeed * 20f * GetComponent<CarController>().m_SteerAngle;
             }
+            Debug.Log(h);
 #if !MOBILE_INPUT
             float handbrake = CrossPlatformInputManager.GetAxis("Jump");
             m_Car.Move(h, v, v, handbrake);
