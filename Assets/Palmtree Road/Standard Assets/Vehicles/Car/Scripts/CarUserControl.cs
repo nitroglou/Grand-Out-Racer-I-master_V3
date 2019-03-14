@@ -44,7 +44,7 @@ namespace UnityStandardAssets.Vehicles.Car
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
             }
-                if (Input.GetKey(KeyCode.Escape))
+            if (Input.GetKey(KeyCode.Escape))
             {
                 SceneManager.LoadScene("Menu", LoadSceneMode.Single);
             }
