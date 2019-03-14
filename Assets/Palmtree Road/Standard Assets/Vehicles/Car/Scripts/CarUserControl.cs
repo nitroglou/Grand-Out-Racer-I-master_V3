@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Vehicles.Car
@@ -39,7 +40,14 @@ namespace UnityStandardAssets.Vehicles.Car
             {
                 h = -Time.deltaTime * movementSpeed * 20f * GetComponent<CarController>().m_SteerAngle;
             }
-            Debug.Log(h);
+            if (Input.GetKey((KeyCode)Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Reset"))))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+            }
+                if (Input.GetKey(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+            }
 #if !MOBILE_INPUT
             float handbrake = CrossPlatformInputManager.GetAxis("Jump");
             m_Car.Move(h, v, v, handbrake);

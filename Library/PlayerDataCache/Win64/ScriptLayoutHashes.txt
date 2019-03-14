@@ -1,8 +1,10 @@
 Win64
 PlayerPath?
-D:/Users/hugop/Desktop/Test/Grand-Out-Racer-I-master.exe
+D:/Users/hugop/Desktop/Nitroglou/Grand-Out-Racer-I-master.exe
 SceneListBegin?
 Assets/Menu/Menu.unity
+Assets/Palmtree Road/Scenes/PalmtreeRoad.unity
+Assets/Pierre/Scenes/Kostantinos.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LevelReset
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -146,7 +148,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 385666d964b0eabb4136cbb95125e502 Assembly-CSharp.dll:UnityStandardAssets.Cameras.ProtectCameraFromWallClip
 303da015e9d1de9fdb27bbc2ba279ebd Assembly-CSharp.dll:UnityStandardAssets.Utility.WaypointProgressTracker
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:UnityStandardAssets.Vehicles.Car.CarUserControl
+131f425607820796717868b02ff18299 Assembly-CSharp.dll:UnityStandardAssets.Vehicles.Car.CarUserControl
 230f7b5038f49d457dbcc3c455c71d9a Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ScreenSpaceAmbientObscurance
 79f1e4d923cfc803b34c05ae2cb73dac Assembly-CSharp.dll:.ScriptTimer
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -183,7 +185,7 @@ dbf76a9159afc3af0f8db0264be8ffff Assembly-CSharp.dll:.KeyBindScript
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:UnityStandardAssets.Utility.ObjectResetter
 9df954eca51e9f2b95915ae2918e4258 Assembly-CSharp.dll:UnityStandardAssets.Effects.AfterburnerPhysicsForce
-e08b7fd025e5743e5563e22fdd827075 Assembly-CSharp.dll:UnityStandardAssets.Vehicles.Car.CarController
+7d24bd42ab6c98eec36318f0ffe56174 Assembly-CSharp.dll:UnityStandardAssets.Vehicles.Car.CarController
 9cc3904a86f5a119184da7351cdb4e65 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.DepthOfField
 0334c4a0effc471453cf665c58f76aff Assembly-CSharp.dll:UnityStandardAssets.Vehicles.Car.CarAIControl
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer

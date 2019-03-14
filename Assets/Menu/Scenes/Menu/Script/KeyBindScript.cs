@@ -11,6 +11,23 @@ public class KeyBindScript : MonoBehaviour
 
     private GameObject currentKey;
 
+    private void Awake()
+    {
+        if (!PlayerPrefs.HasKey("Up"))
+            PlayerPrefs.GetString("Up", "Z");
+        if (!PlayerPrefs.HasKey("Down"))
+            PlayerPrefs.GetString("Down", "S");
+        if (!PlayerPrefs.HasKey("Left"))
+            PlayerPrefs.GetString("Left", "Q");
+        if (!PlayerPrefs.HasKey("Right"))
+            PlayerPrefs.GetString("Right", "D");
+        if (!PlayerPrefs.HasKey("Frein"))
+            PlayerPrefs.GetString("Frein", "Space");
+        if (!PlayerPrefs.HasKey("Reset"))
+            PlayerPrefs.GetString("Reset", "R");
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {

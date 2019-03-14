@@ -60,6 +60,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Camera\Scripts\BWEffect.cs" />
+    <Compile Include="Assets\Camera\Scripts\DiyEffect__FullOnly.cs" />
+    <Compile Include="Assets\Camera\Scripts\ShaderEffect_BleedingColors.cs" />
+    <Compile Include="Assets\Camera\Scripts\ShaderEffect_CorruptedVram.cs" />
+    <Compile Include="Assets\Camera\Scripts\ShaderEffect_CRT.cs" />
+    <Compile Include="Assets\Camera\Scripts\ShaderEffect_Scanner.cs" />
+    <Compile Include="Assets\Camera\Scripts\ShaderEffect_Tint.cs" />
+    <Compile Include="Assets\Camera\Scripts\ShaderEffect_Unsync.cs" />
+    <Compile Include="Assets\Camera\Scripts\ShaderToTexture.cs" />
     <Compile Include="Assets\Menu\Scenes\Menu\Script\KeyBindScript.cs" />
     <Compile Include="Assets\Menu\Scenes\Menu\Script\MainMenu.cs" />
     <Compile Include="Assets\Menu\Scenes\Timer\ScriptTimer.cs" />
@@ -198,12 +207,14 @@
     <Compile Include="Assets\Palmtree Road\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
     <None Include="Assets\Palmtree Road\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Camera\Shaders\Distortion2D__FullOnly.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Camera\Shaders\Scanlines.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Environment\Water (Basic)\DO_NOT_WORK_IN_VR.txt" />
@@ -226,10 +237,13 @@
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
+    <None Include="Assets\Realistic Glitches Lite\Documentation\Realistic Glitches.txt" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\Camera\Shaders\BleedingColors.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\Pierre\Map\Arbre\Trees_WorldSpace\WorldSpaceTrees_Doc.txt" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\Camera\Shaders\Shift.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
@@ -248,6 +262,7 @@
     <None Include="Assets\Palmtree Road\Standard Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Camera\Shaders\VUnsync.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
@@ -284,6 +299,7 @@
     <None Include="Assets\Pierre\Map\Arbre\Trees_WorldSpace\Misc\Obselete_canDelete\ShaderForgeDepricated\Depricated_canDelete\SF_Dep_TreeBarkShader.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\Palmtree Road\Standard Assets\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\Camera\Shaders\Tint.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
@@ -299,11 +315,13 @@
     <None Include="Assets\Palmtree Road\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
     <None Include="Assets\Pierre\Map\building\bridge\Julien Tonsuso\Modular Fantasy Bridges\README.txt" />
     <None Include="Assets\Palmtree Road\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Camera\Shaders\Distortion.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
     <None Include="Assets\Pierre\Map\Arbre\Trees_WorldSpace\Misc\Obselete_canDelete\ShaderForgeDepricated\Depricated_canDelete\SF_Dep_TreeLeavesSwitcher.shader" />
     <None Include="Assets\Palmtree Road\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Camera\Shaders\BWDiffuse.shader" />
     <None Include="Assets\Palmtree Road\POLY STYLE - Vegetation Pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Users/hugop/Desktop/Grand-Out-Racer-I-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
