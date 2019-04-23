@@ -69,6 +69,7 @@
     <Compile Include="Assets\Camera\Scripts\ShaderEffect_Tint.cs" />
     <Compile Include="Assets\Camera\Scripts\ShaderEffect_Unsync.cs" />
     <Compile Include="Assets\Camera\Scripts\ShaderToTexture.cs" />
+    <Compile Include="Assets\Manager.cs" />
     <Compile Include="Assets\Menu\Scenes\Menu\Script\KeyBindScript.cs" />
     <Compile Include="Assets\Menu\Scenes\Menu\Script\MainMenu.cs" />
     <Compile Include="Assets\Menu\Scenes\Timer\ScriptTimer.cs" />
